@@ -14,7 +14,6 @@
 
         <!-- Add custom CSS here -->
         <link href="css/business-casual.css" rel="stylesheet">
-        <link href="./css/site.css" rel="stylesheet">
         <link href="./css/photoswipe.css" rel="stylesheet">
         <link href="./css/default-skin.css" rel="stylesheet">
 
@@ -956,15 +955,15 @@
                         });
 
                         gallery.listen('gettingData', function(index, item) {
-                            if (useLargeImages) {
+                            //if (useLargeImages) {
                                 item.src = item.o.src;
                                 item.w = item.o.w;
                                 item.h = item.o.h;
-                            } else {
-                                item.src = item.m.src;
-                                item.w = item.m.w;
-                                item.h = item.m.h;
-                            }
+                            //} else {
+                            //    item.src = item.m.src;
+                            //    item.w = item.m.w;
+                            //    item.h = item.m.h;
+                            //}
                         });
 
                         gallery.init();
